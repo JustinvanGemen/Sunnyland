@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Kill
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -14,14 +15,14 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Background
+  - Scenery
+  - Uninteractable
+  - Level
+  - Collectable
+  - Crank
+  - Player
+  - Enemy
   - 
   - 
   - 

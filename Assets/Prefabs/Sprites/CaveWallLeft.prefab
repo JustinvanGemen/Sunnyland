@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6283006280481434320}
   - component: {fileID: 6283006280481434323}
   - component: {fileID: 3715658420567205610}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: CaveWallLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}

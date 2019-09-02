@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3992189981971069070}
   - component: {fileID: 3992189981971069071}
-  - component: {fileID: 8352693963764471230}
-  m_Layer: 0
+  - component: {fileID: 7545199362239912485}
+  m_Layer: 11
   m_Name: CaveCorner_Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -80,8 +80,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &8352693963764471230
-BoxCollider2D:
+--- !u!60 &7545199362239912485
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -103,6 +103,11 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.31, y: 0.32}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.155, y: 0.16}
+      - {x: -0.13794355, y: 0.075783014}
+      - {x: 0.014373928, y: -0.07229626}
+      - {x: 0.08295415, y: -0.13217103}
+      - {x: 0.155, y: -0.16}
+      - {x: 0.155, y: 0.16}

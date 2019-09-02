@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5742848837669221111}
   - component: {fileID: 5742848837669221110}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: shrooms
   m_TagString: Untagged
   m_Icon: {fileID: 0}

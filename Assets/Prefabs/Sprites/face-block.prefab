@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2051658580441130410}
   - component: {fileID: 2051658580441130409}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: face-block
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1186367042635324494}
   - component: {fileID: 1186367042635324495}
   - component: {fileID: -8148285952044845750}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Big_Rune_Block
   m_TagString: Untagged
   m_Icon: {fileID: 0}

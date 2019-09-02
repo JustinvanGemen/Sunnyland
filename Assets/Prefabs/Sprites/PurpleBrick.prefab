@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 866540893433437432}
   - component: {fileID: 866540893433437433}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PurpleBrick
   m_TagString: Untagged
   m_Icon: {fileID: 0}

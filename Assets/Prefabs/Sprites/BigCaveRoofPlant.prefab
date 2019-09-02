@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8338943681739295591}
   - component: {fileID: 8338943681739295590}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BigCaveRoofPlant
   m_TagString: Untagged
   m_Icon: {fileID: 0}

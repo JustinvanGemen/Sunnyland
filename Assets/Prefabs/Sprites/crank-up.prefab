@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4921222465344403048}
   - component: {fileID: 4921222465344403051}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: crank-up
   m_TagString: Untagged
   m_Icon: {fileID: 0}

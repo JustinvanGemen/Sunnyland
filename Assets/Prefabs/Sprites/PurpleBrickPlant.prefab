@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4494025586525160489}
   - component: {fileID: 4494025586525160488}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PurpleBrickPlant
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 9134118948124020975}
   - component: {fileID: 9134118948124020972}
   - component: {fileID: 3812138559190464821}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GrassSlope_Right1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7955298285383429565}
   - component: {fileID: 7955298285383429562}
   - component: {fileID: -2970894872943134184}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Dirt_Block4
   m_TagString: Untagged
   m_Icon: {fileID: 0}

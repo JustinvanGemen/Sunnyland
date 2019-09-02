@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8075923975420522387}
   - component: {fileID: 8075923975420522388}
   - component: {fileID: -7281170707925624754}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CaveRoof 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4449187351468696747}
   - component: {fileID: 4449187351468696746}
   - component: {fileID: 5418444406399742177}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: BrownStone_Block2
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8769208016251378803}
   - component: {fileID: 8769208016251378804}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: eagle-attack-4
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

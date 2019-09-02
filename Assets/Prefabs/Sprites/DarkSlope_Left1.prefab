@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5868920418485704148}
   - component: {fileID: 5868920418485704149}
   - component: {fileID: 7049169599320008542}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: DarkSlope_Left1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

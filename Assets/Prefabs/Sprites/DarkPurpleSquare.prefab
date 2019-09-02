@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5780421787917059950}
   - component: {fileID: 5780421787917059951}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: DarkPurpleSquare
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2909653438646079199}
   - component: {fileID: 2909653438646079198}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: opossum-5
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

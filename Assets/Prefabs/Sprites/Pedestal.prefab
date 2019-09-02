@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5470400420685398852}
   - component: {fileID: 5470400420685398853}
   - component: {fileID: -2941275775074976391}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Pedestal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
