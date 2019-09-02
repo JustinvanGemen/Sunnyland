@@ -2779,7 +2779,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 243817491366726392, guid: 82b9958437c2eca41b324f791e531798,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: f5483ef2e110e0d428dfe08dde427f92, type: 3}
+  m_audioClip: {fileID: 8300000, guid: aa3f6b1efa3f3f844beb65ae5e395fe1, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -4251,7 +4251,7 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}

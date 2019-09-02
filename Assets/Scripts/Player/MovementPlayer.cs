@@ -8,13 +8,13 @@ public class MovementPlayer : MonoBehaviour {
 
 	private float _movementSpeed = 15f;
 
-	private float hMove = 0f;
+	private float _horizontalMove = 0f;
 	private bool _jumping = false;
 	private bool _crouching = false;
 	
 	private void Update () {
 
-		hMove = Input.GetAxisRaw("Horizontal") * _movementSpeed;
+		_horizontalMove = Input.GetAxisRaw("Horizontal") * _movementSpeed;
 
 		if (Input.GetKeyDown(KeyCode.W))
 		{
@@ -23,17 +23,20 @@ public class MovementPlayer : MonoBehaviour {
 
 		if (Input.GetKeyDown(KeyCode.S))
 		{
+			if(!_crouching)
+			{
 			_crouching = true;
-		} else if (Input.GetKeyDown(KeyCode.S))
-		{
-			_crouching = false;
+			}
+			else{
+				_crouching = false;
+			}
 		}
 
 	}
 
 	private void FixedUpdate ()
 	{
-		_movementController.Move(hMove * Time.fixedDeltaTime, _crouching, _jumping);
+		_movementController.Move(_horizontalMove * Time.fixedDeltaTime, _crouching, _jumping);
 		_jumping = false;
 	}
 }

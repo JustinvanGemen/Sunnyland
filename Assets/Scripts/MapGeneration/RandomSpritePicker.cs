@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class RandomSpritePicker : MonoBehaviour
 {
-    // 3, 9 14, 15, 16
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private Sprite[] sprites;
     void Start()

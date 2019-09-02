@@ -24,18 +24,18 @@ private void Start(){
      muteToggle.isOn = false;
 
 }
-        /// <summary>
-        /// Updates the music volume when the player changes its value on a slider.
-        /// </summary>
+/// <summary>
+/// Updates the music volume when the player changes its value on a slider.
+/// </summary>
 
 public void SetLevelMusic(){
     
     musicMixer.SetFloat(musicVol, Mathf.Log10(musicSlider.value)*20);
 }
 
-        /// <summary>
-        /// Updates the sfx volume when the player changes its value on a slider
-        /// </summary>
+/// <summary>
+/// Updates the sfx volume when the player changes its value on a slider
+/// </summary>
 public void SetLevelSFX(){
     
     musicMixer.SetFloat(sfxVol, Mathf.Log10(SfxSlider.value)*20);

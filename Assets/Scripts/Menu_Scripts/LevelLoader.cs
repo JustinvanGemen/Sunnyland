@@ -6,16 +6,16 @@ using TMPro;
 
 public class LevelLoader : MonoBehaviour
 {
-    public GameObject loadingScreen;
-    public Slider slider;
-    public TMP_Text text;
+    [SerializeField] private GameObject loadingScreen;
+    [SerializeField] private Slider slider;
+    [SerializeField] private TMP_Text text;
 
 
     public void LoadLevel(int sceneIndex){
         StartCoroutine(LoadAsynchronously(sceneIndex));
     }
 
-    IEnumerator LoadAsynchronously(int sceneIndex){
+    private IEnumerator LoadAsynchronously(int sceneIndex){
         AsyncOperation operation = SceneManager.LoadSceneAsync(sceneIndex);
         loadingScreen.SetActive(true);
 

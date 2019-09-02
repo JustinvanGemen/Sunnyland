@@ -24,7 +24,7 @@ public class MovementController : MonoBehaviour
 	//bool for checking if the player is grounded
 	private bool _grounded;
 	//Radius to check if the player can currently stand-up
-	const float _ceilingRadius = .2f;
+	private const float _ceilingRadius = .2f;
 	//The rigidbody of the player
 	[SerializeField] private Rigidbody2D _rigidbody2D;
 	//For determining which way the character is looking
