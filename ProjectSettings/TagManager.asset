@@ -9,6 +9,7 @@ TagManager:
   - Collectable
   - Cherry
   - Gem
+  - Victory
   layers:
   - Default
   - TransparentFX

@@ -1,42 +1,40 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class MovementPlayer : MonoBehaviour {
+public class MovementPlayer : MonoBehaviour
+{
 
-	[SerializeField] private MovementController _movementController;
 
-	private float _movementSpeed = 15f;
+    [SerializeField] private MovementController _movementController;
+    [SerializeField] private PlayerJump _playerJump;
+    [SerializeField] private PlayerCrouch _playerCrouch;
 
-	private float _horizontalMove = 0f;
-	private bool _jumping = false;
-	private bool _crouching = false;
-	
-	private void Update () {
+    private float _movementSpeed = 15f;
+    private float _horizontalMove = 0f;
+    private bool _jumping = false;
+    private bool _crouching = false;
+    private bool _running = false;
 
-		_horizontalMove = Input.GetAxisRaw("Horizontal") * _movementSpeed;
+    public bool Running => _running;
+    public bool Jumping => _jumping;
+    public bool Crouching => _crouching;
 
-		if (Input.GetKeyDown(KeyCode.W))
-		{
-			_jumping = true;
-		}
+    private void Update()
+    {
+        if (!_crouching)
+        {
+            _horizontalMove = Input.GetAxisRaw("Horizontal") * _movementSpeed;
+            _running = Input.GetAxisRaw("Horizontal") != 0;
+        }
+        _jumping = Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Space);
+        _crouching = Input.GetKey(KeyCode.S);
+    }
 
-		if (Input.GetKeyDown(KeyCode.S))
-		{
-			if(!_crouching)
-			{
-			_crouching = true;
-			}
-			else{
-				_crouching = false;
-			}
-		}
-
-	}
-
-	private void FixedUpdate ()
-	{
-		_movementController.Move(_horizontalMove * Time.fixedDeltaTime, _crouching, _jumping);
-		_jumping = false;
-	}
+    private void FixedUpdate()
+    {
+        float speed = _horizontalMove * Time.fixedDeltaTime;
+        _movementController.Move(speed);
+        _playerJump.Jump(_jumping);
+        _playerCrouch.Crouch(_crouching, speed);
+        _jumping = false;
+    }
 }

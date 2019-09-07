@@ -1,10 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
+﻿using UnityEngine;
 using TMPro;
 
-public class Collecting : MonoBehaviour
+public class Collectable : MonoBehaviour
 {
     private int _cherriesCollected = 0;
     private int _gemsCollected = 0;
@@ -13,21 +10,26 @@ public class Collecting : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D otherCol)
     {
-        if(otherCol.tag == "Gem"){
-            otherCol.gameObject.SetActive(false);
-            _gemsCollected ++;
+        if (otherCol.tag == "Gem")
+        {
+            otherCol.gameObject.GetComponent<Animator>().SetTrigger("Collected");
+            otherCol.gameObject.GetComponent<BoxCollider2D>().enabled = false;
+            _gemsCollected++;
             UpdateText();
             return;
         }
-        if(otherCol.tag == "Cherry"){
-            otherCol.gameObject.SetActive(false);
-            _cherriesCollected ++;
+        if (otherCol.tag == "Cherry")
+        {
+            otherCol.gameObject.GetComponent<Animator>().SetTrigger("Collected");
+            otherCol.gameObject.GetComponent<BoxCollider2D>().enabled = false;
+            _cherriesCollected++;
             UpdateText();
             return;
-        }  
+        }
     }
 
-    private void UpdateText(){
+    private void UpdateText()
+    {
         _cherriesText.text = _cherriesCollected.ToString();
         _gemsText.text = _gemsCollected.ToString();
     }

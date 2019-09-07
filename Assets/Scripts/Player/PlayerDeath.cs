@@ -1,13 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerDeath : MonoBehaviour
 {
-    [SerializeField]private GameObject _deathMenu;
+    [SerializeField] private GameObject _deathMenu;
     void OnTriggerEnter2D(Collider2D otherCol)
     {
-        if(otherCol.tag == "Enemy"){
+        if (otherCol.tag == "Enemy")
+        {
             var spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
             var playerMovement = gameObject.GetComponent<MovementPlayer>();
             Color tempColor = spriteRenderer.color;
@@ -15,7 +14,7 @@ public class PlayerDeath : MonoBehaviour
             spriteRenderer.color = tempColor;
             playerMovement.enabled = false;
             _deathMenu.SetActive(true);
-            
+
         }
     }
 }
