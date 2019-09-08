@@ -25,8 +25,8 @@ public class MovementPlayer : MonoBehaviour
             _horizontalMove = Input.GetAxisRaw("Horizontal") * _movementSpeed;
             _running = Input.GetAxisRaw("Horizontal") != 0;
         }
-        _jumping = Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Space);
-        _crouching = Input.GetKey(KeyCode.S);
+        _jumping = Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow);
+        _crouching = Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow);
     }
 
     private void FixedUpdate()
