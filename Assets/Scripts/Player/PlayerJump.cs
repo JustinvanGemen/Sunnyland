@@ -18,7 +18,7 @@ public class PlayerJump : MonoBehaviour
     [SerializeField] private Rigidbody2D _rigidbody2D;
 
     // Radius to determine if the character is currently grounded
-    const float _groundedRadius = .2f;
+    private const float _groundedRadius = .2f;
 
     //bool for checking if the player is grounded
     private bool _grounded;

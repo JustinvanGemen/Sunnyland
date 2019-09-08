@@ -8,7 +8,9 @@ public class PlayerDeath : MonoBehaviour
     //Public boolean that mirrors the private boolean "_dead". This can be accessed in other scripts.
     public bool Dead => _dead;
 
-    //2d collider check, when colliding with a collider thats set to "Is trigger" in the inspector.
+    /// <summary>
+    ///2d collider check, when colliding with a collider thats set to "Is trigger" in the inspector.
+    /// </summary>
     void OnTriggerEnter2D(Collider2D otherCol)
     {
         //Compares the tag of the other object to "Enemy", if its true(if the other tag is indeed Enemy), it continues into the if statement.
