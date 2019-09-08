@@ -2,8 +2,6 @@
 
 public class MovementPlayer : MonoBehaviour
 {
-
-
     [SerializeField] private MovementController _movementController;
     [SerializeField] private PlayerJump _playerJump;
     [SerializeField] private PlayerCrouch _playerCrouch;
@@ -15,7 +13,7 @@ public class MovementPlayer : MonoBehaviour
     private bool _running = false;
 
     public bool Running => _running;
-    public bool Jumping => _jumping;
+    public bool Grounded => _playerJump.Grounded;
     public bool Crouching => _crouching;
 
     private void Update()

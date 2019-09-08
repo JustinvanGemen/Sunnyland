@@ -22,6 +22,8 @@ public class PlayerJump : MonoBehaviour
 
     //bool for checking if the player is grounded
     private bool _grounded;
+    //Public bool that is equal to _grounded
+    public bool Grounded => _grounded;
 
     private void FixedUpdate()
     {
@@ -33,7 +35,10 @@ public class PlayerJump : MonoBehaviour
         for (int i = 0; i < colliders.Length; i++)
         {
             if (colliders[i].gameObject != gameObject)
+            {
                 _grounded = true;
+
+            }
 
         }
     }

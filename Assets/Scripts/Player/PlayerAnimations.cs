@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerAnimations : MonoBehaviour
 {
@@ -12,11 +10,11 @@ public class PlayerAnimations : MonoBehaviour
     {
         if (_playerDeath.Dead)
         {
+            _animator.SetBool("Hurting", true);
             return;
         }
-        if (_movement.Jumping)
+        if (!_movement.Grounded)
         {
-            print("peppa");
             _animator.SetBool("Jumping", true);
             _animator.SetBool("Idling", false);
         }
@@ -25,22 +23,18 @@ public class PlayerAnimations : MonoBehaviour
             _animator.SetBool("Crouching", true);
             _animator.SetBool("Idling", false);
         }
-        if (_movement.Running && !_movement.Jumping)
+        if (_movement.Running && _movement.Grounded)
         {
             _animator.SetBool("Running", true);
             _animator.SetBool("Idling", false);
         }
-        if (!_movement.Running && !_movement.Jumping && !_movement.Crouching)
+        if (!_movement.Running && _movement.Grounded && !_movement.Crouching)
         {
             _animator.SetBool("Idling", true);
 
             _animator.SetBool("Jumping", false);
             _animator.SetBool("Crouching", false);
             _animator.SetBool("Running", false);
-        }
-        if (_playerDeath.Dead)
-        {
-            _animator.SetBool("Hurting", true);
         }
     }
 }
