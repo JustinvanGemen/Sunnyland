@@ -13,17 +13,17 @@ namespace PeppaSquad.Utils
         //Position of the transform
         private Vector3 _transformPosition;
 
-        ///<summary>
-        ///Sets the transform position variable equal to the transform position
-        ///</summary>
+        /// <summary>
+        ///  Sets the transform position variable equal to the transform position
+        /// </summary>
         void Start()
         {
             _transformPosition = transform.position;
         }
 
-        ///<summary>
-        ///Follows the target with the camera
-        ///</summary>
+        /// <summary>
+        ///  Follows the target with the camera
+        /// </summary>
         void Update()
         {
             //Checks if there is a target

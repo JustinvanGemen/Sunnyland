@@ -35,17 +35,17 @@ namespace PeppaSquad.Enemy.Frog
         //Bool to track what way the object is facing
         private bool _facingRight;
 
-        ///<summary>
-        ///At the start of the game, start the coroutine Jump (Found at the bottom of the script).
-        ///</summary>
+        /// <summary>
+        /// At the start of the game, start the coroutine Jump (Found at the bottom of the script).
+        /// </summary>
         private void Start()
         {
             StartCoroutine(Jump());
         }
 
-        ///<summary>
-        /// Update goes off once per frame, and if the object is currently grounded, it is set to Idling in the animator.
-        ///</summary>
+        /// <summary>
+        ///  Update goes off once per frame, and if the object is currently grounded, it is set to Idling in the animator.
+        /// </summary>
         private void Update()
         {
             if (_grounded)
@@ -54,9 +54,9 @@ namespace PeppaSquad.Enemy.Frog
             }
         }
 
-        ///<summary>
-        /// When entering another collider thats set to trigger, it compares the tag of the other gameobject to TurnAI. If they're the same, it triggers the if statement.
-        ///</summary>
+        /// <summary>
+        ///  When entering another collider thats set to trigger, it compares the tag of the other gameobject to TurnAI. If they're the same, it triggers the if statement.
+        /// </summary>
         private void OnTriggerEnter2D(Collider2D otherCol)
         {
             if (otherCol.tag == "TurnAI")
@@ -66,17 +66,17 @@ namespace PeppaSquad.Enemy.Frog
             }
         }
 
-        ///<summary>
-        /// Simply flips the sprite around. flipX becomes false if its true, and true if its false.
-        ///</summary>
+        /// <summary>
+        ///  Simply flips the sprite around. flipX becomes false if its true, and true if its false.
+        /// </summary>
         private void FlipSprite()
         {
             _spriteRenderer.flipX = !_spriteRenderer.flipX;
         }
 
-        ///<summary>
-        ///FixedUpdate gets called 50 times per second, no matter the framerate. This makes it good for physics. In this script its used to check if the object is touching the ground.
-        ///</summary>
+        /// <summary>
+        /// FixedUpdate gets called 50 times per second, no matter the framerate. This makes it good for physics. In this script its used to check if the object is touching the ground.
+        /// </summary>
         private void FixedUpdate()
         {
             _grounded = false;
@@ -94,9 +94,9 @@ namespace PeppaSquad.Enemy.Frog
             }
         }
 
-        ///<summary>
-        ///Coroutine to take care of the frog jumping and to make sure the correct animation is being played.
-        ///</summary>
+        /// <summary>
+        /// Coroutine to take care of the frog jumping and to make sure the correct animation is being played.
+        /// </summary>
         private IEnumerator Jump()
         {
             //While is used to repeat the coroutine 

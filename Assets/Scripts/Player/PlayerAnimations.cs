@@ -11,9 +11,9 @@ namespace PeppaSquad.Player
         //The animator in charge of the player animations
         [SerializeField] private Animator _animator;
 
-        ///<summary>
-        /// Update constantly checks if any of the conditions have change to play the correct animation at all times
-        ///</summary>
+        /// <summary>
+        ///  Update constantly checks if any of the conditions have change to play the correct animation at all times
+        /// </summary>
         private void Update()
         {
             //If the player is dead, play the hurt animation and "ignore" the everything below inside of the function

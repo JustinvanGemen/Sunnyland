@@ -13,9 +13,9 @@ namespace PeppaSquad.Collectable
         [SerializeField] private TMP_Text _gemsText;
         [SerializeField] private TMP_Text _cherriesText;
 
-        ///<summary>
-        /// An ontriggerenter being used to check when the player enters a trigger with the tag Gem or Cherry.
-        ///</summary>
+        /// <summary>
+        ///  An ontriggerenter being used to check when the player enters a trigger with the tag Gem or Cherry.
+        /// </summary>
 
         void OnTriggerEnter2D(Collider2D otherCol)
         {
@@ -41,9 +41,9 @@ namespace PeppaSquad.Collectable
             }
         }
 
-        ///<summary>
-        /// UpdateText function that sets the text from the TMP to the amount of cherries/gems currently collected after converting the int to a string.
-        ///</summary>
+        /// <summary>
+        ///  UpdateText function that sets the text from the TMP to the amount of cherries/gems currently collected after converting the int to a string.
+        /// </summary>
         private void UpdateText()
         {
             _cherriesText.text = _cherriesCollected.ToString();

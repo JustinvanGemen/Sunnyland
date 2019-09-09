@@ -27,9 +27,9 @@ namespace PeppaSquad.Enemy
             }
         }
 
-        ///<summary>
-        /// When triggering, and the other collider has the tag "TurnAI", turn around
-        ///</summary>
+        /// <summary>
+        ///  When triggering, and the other collider has the tag "TurnAI", turn around
+        /// </summary>
         private void OnTriggerEnter2D(Collider2D otherCol)
         {
             if (otherCol.tag == "TurnAI")
@@ -39,9 +39,9 @@ namespace PeppaSquad.Enemy
             }
         }
 
-        ///<summary>
-        /// Flips the objects sprite.
-        ///</summary>
+        /// <summary>
+        ///  Flips the objects sprite.
+        /// </summary>
         private void FlipSprite()
         {
             _spriteRenderer.flipX = !_spriteRenderer.flipX;

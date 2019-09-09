@@ -26,9 +26,9 @@ namespace PeppaSquad.Player
         private bool _grounded;
         //Public bool that is equal to _grounded
         public bool Grounded => _grounded;
-        ///<summary>
-        /// This FixedUpdate is used to check if the player is touching the ground
-        ///</summary>
+        /// <summary>
+        ///  This FixedUpdate is used to check if the player is touching the ground
+        /// </summary>
         private void FixedUpdate()
         {
             _grounded = false;
@@ -46,9 +46,9 @@ namespace PeppaSquad.Player
 
             }
         }
-        ///<summary>
-        ///This function gets called in PlayerMovement. It takes care of the actual jumping.
-        ///</summary>
+        /// <summary>
+        ///  This function gets called in PlayerMovement. It takes care of the actual jumping.
+        /// </summary>
         public void Jump(bool jump)
         {
             if (_grounded || _airControl)

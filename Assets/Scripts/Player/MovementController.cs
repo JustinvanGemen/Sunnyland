@@ -12,9 +12,9 @@ namespace PeppaSquad.Player
         //Vector for Velocity!
         private Vector3 _velocity = Vector3.zero;
 
-        ///<summary>
-        /// Takes care of moving the player
-        ///</summary>
+        /// <summary>
+        ///  Takes care of moving the player
+        /// </summary>
         public void Move(float move)
         {
 
@@ -32,9 +32,9 @@ namespace PeppaSquad.Player
 
 
         }
-        ///<summary>
-        /// Flips the player to face the direction where the player is moving.
-        ///</summary>
+        /// <summary>
+        ///  Flips the player to face the direction where the player is moving.
+        /// </summary>
         private void Flip()
         {
             // Flips the sprite

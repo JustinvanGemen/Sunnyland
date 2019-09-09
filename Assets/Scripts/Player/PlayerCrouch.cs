@@ -15,9 +15,9 @@ namespace PeppaSquad.Player
         //Radius to check if the player can currently stand-up
         private const float _ceilingRadius = .2f;
 
-        ///<summary>
-        /// Referenced in MovementPlayer. Takes care of crouching
-        ///</summary>
+        /// <summary>
+        ///  Referenced in MovementPlayer. Takes care of crouching
+        /// </summary>
         public void Crouch(bool crouch, float move)
         {
 

@@ -12,9 +12,9 @@ namespace PeppaSquad.Player
         private bool _won = false;
         //Public bool equal to the private bool
         public bool Won => _won;
-        ///<summary>
-        /// When triggering a collider, check if the tag of the collider is Victory, if it is; set _won to true to indicate the player won, turn off movement and show the victoryUI
-        ///</summary>
+        /// <summary>
+        ///  When triggering a collider, check if the tag of the collider is Victory, if it is; set _won to true to indicate the player won, turn off movement and show the victoryUI
+        /// </summary>
         private void OnTriggerEnter2D(Collider2D otherCol)
         {
             if (otherCol.tag == "Victory")

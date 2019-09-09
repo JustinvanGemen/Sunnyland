@@ -9,9 +9,9 @@ namespace PeppaSquad.MapGeneration
         //An array of sprites to choose from
         [SerializeField] private Sprite[] sprites;
 
-        ///<summary>
-        /// At the start of the game, chooses a random sprite from the array for the spriterenderer to display. Its currently used for the dirt ground of the level.
-        ///</summary>
+        /// <summary>
+        ///  At the start of the game, chooses a random sprite from the array for the spriterenderer to display. Its currently used for the dirt ground of the level.
+        /// </summary>
         void Start()
         {
             spriteRenderer.sprite = sprites[Random.Range(0, sprites.Length)];
