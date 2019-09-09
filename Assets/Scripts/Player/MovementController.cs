@@ -10,6 +10,9 @@ public class MovementController : MonoBehaviour
     //Vector for Velocity!
     private Vector3 _velocity = Vector3.zero;
 
+    ///<summary>
+    /// Takes care of moving the player
+    ///</summary>
     public void Move(float move)
     {
 
@@ -21,13 +24,15 @@ public class MovementController : MonoBehaviour
         // Flip the player based on input so that the player visually faces the correct direction
         if (move > 0 && !_facingRight || move < 0 && _facingRight)
         {
-            // ... flip the player.
+            //flip the player.
             Flip();
         }
 
 
     }
-    //Simply flips the players sprite to face the direction in which the player is walking
+    ///<summary>
+    /// Flips the player to face the direction where the player is moving.
+    ///</summary>
     private void Flip()
     {
         // Flips the sprite

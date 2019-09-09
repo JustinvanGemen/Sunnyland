@@ -1,11 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class QuitGame : MonoBehaviour
 {
-    // Start is called before the first frame update
-    public void QuittingGame(){
+    ///<summary>
+    ///Simply quits the game through a button in the menu. 
+    ///</summary>
+    public void QuittingGame()
+    {
         Application.Quit();
     }
 }

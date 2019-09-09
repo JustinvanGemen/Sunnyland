@@ -24,7 +24,9 @@ public class PlayerJump : MonoBehaviour
     private bool _grounded;
     //Public bool that is equal to _grounded
     public bool Grounded => _grounded;
-
+    ///<summary>
+    /// This FixedUpdate is used to check if the player is touching the ground
+    ///</summary>
     private void FixedUpdate()
     {
         _grounded = false;
@@ -42,7 +44,9 @@ public class PlayerJump : MonoBehaviour
 
         }
     }
-    //This function gets called in PlayerMovement. It takes care of the actual jumping.
+    ///<summary>
+    ///This function gets called in PlayerMovement. It takes care of the actual jumping.
+    ///</summary>
     public void Jump(bool jump)
     {
         if (_grounded || _airControl)
@@ -52,6 +56,7 @@ public class PlayerJump : MonoBehaviour
             {
                 // Add a vertical force to the player.
                 _grounded = false;
+
                 _rigidbody2D.AddForce(new Vector2(0f, _jumpForce));
             }
         }

@@ -7,6 +7,7 @@ public class ActiveSwitch : MonoBehaviour
     /// </summary>
     public void SwitchActive(GameObject target)
     {
+        //If the target is active, turn it inactive. If its inactive, turn it active.
         target.SetActive(!target.activeSelf);
     }
 }
