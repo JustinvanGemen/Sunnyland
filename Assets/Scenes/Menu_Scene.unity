@@ -2375,6 +2375,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 955075088}
     m_Modifications:
+    - target: {fileID: 8459903711307174688, guid: 6e7c2f9695bb56149bb9f41ca732a49d,
+        type: 3}
+      propertyPath: m_Name
+      value: SettingsMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 8459903711307174688, guid: 6e7c2f9695bb56149bb9f41ca732a49d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4310440289537549259, guid: 6e7c2f9695bb56149bb9f41ca732a49d,
         type: 3}
       propertyPath: m_Enabled
@@ -2389,16 +2399,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8459903711307174688, guid: 6e7c2f9695bb56149bb9f41ca732a49d,
-        type: 3}
-      propertyPath: m_Name
-      value: SettingsMenu
-      objectReference: {fileID: 0}
-    - target: {fileID: 8459903711307174688, guid: 6e7c2f9695bb56149bb9f41ca732a49d,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8459903711307174689, guid: 6e7c2f9695bb56149bb9f41ca732a49d,
         type: 3}
@@ -2505,16 +2505,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 8459903710967090172, guid: 6e7c2f9695bb56149bb9f41ca732a49d,
-        type: 3}
-      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1663574848}
-    - target: {fileID: 8459903710967090172, guid: 6e7c2f9695bb56149bb9f41ca732a49d,
-        type: 3}
-      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetLevelMusic
-      objectReference: {fileID: 0}
     - target: {fileID: 8459903710377689993, guid: 6e7c2f9695bb56149bb9f41ca732a49d,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -2539,16 +2529,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8459903710060339655, guid: 6e7c2f9695bb56149bb9f41ca732a49d,
-        type: 3}
-      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1663574848}
-    - target: {fileID: 8459903710060339655, guid: 6e7c2f9695bb56149bb9f41ca732a49d,
-        type: 3}
-      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetLevelSFX
       objectReference: {fileID: 0}
     - target: {fileID: 8459903710616660939, guid: 6e7c2f9695bb56149bb9f41ca732a49d,
         type: 3}
@@ -2590,5 +2570,45 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 818512786}
+    - target: {fileID: 8459903710720149023, guid: 6e7c2f9695bb56149bb9f41ca732a49d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SwitchActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 8459903710720149023, guid: 6e7c2f9695bb56149bb9f41ca732a49d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8459903710720149023, guid: 6e7c2f9695bb56149bb9f41ca732a49d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8459903710720149023, guid: 6e7c2f9695bb56149bb9f41ca732a49d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 1663574846}
+    - target: {fileID: 8459903710967090172, guid: 6e7c2f9695bb56149bb9f41ca732a49d,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1663574848}
+    - target: {fileID: 8459903710967090172, guid: 6e7c2f9695bb56149bb9f41ca732a49d,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetLevelMusic
+      objectReference: {fileID: 0}
+    - target: {fileID: 8459903710060339655, guid: 6e7c2f9695bb56149bb9f41ca732a49d,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1663574848}
+    - target: {fileID: 8459903710060339655, guid: 6e7c2f9695bb56149bb9f41ca732a49d,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetLevelSFX
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e7c2f9695bb56149bb9f41ca732a49d, type: 3}

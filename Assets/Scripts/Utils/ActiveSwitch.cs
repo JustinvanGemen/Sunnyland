@@ -1,13 +1,16 @@
 ﻿using UnityEngine;
 
-public class ActiveSwitch : MonoBehaviour
+namespace PeppaSquad.Utils
 {
-    /// <summary>
-    /// Switches the target object between active and inactive
-    /// </summary>
-    public void SwitchActive(GameObject target)
+    public class ActiveSwitch : MonoBehaviour
     {
-        //If the target is active, turn it inactive. If its inactive, turn it active.
-        target.SetActive(!target.activeSelf);
+        /// <summary>
+        /// Switches the target object between active and inactive
+        /// </summary>
+        public void SwitchActive(GameObject target)
+        {
+            //If the target is active, turn it inactive. If its inactive, turn it active.
+            target.SetActive(!target.activeSelf);
+        }
     }
 }

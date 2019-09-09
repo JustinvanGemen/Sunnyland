@@ -1,12 +1,15 @@
 ﻿using UnityEngine;
 
-public class QuitGame : MonoBehaviour
+namespace PeppaSquad.Utils
 {
-    ///<summary>
-    ///Simply quits the game through a button in the menu. 
-    ///</summary>
-    public void QuittingGame()
+    public class QuitGame : MonoBehaviour
     {
-        Application.Quit();
+        ///<summary>
+        ///Simply quits the game through a button in the menu. 
+        ///</summary>
+        public void QuittingGame()
+        {
+            Application.Quit();
+        }
     }
 }
