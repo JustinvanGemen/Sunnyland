@@ -25354,7 +25354,7 @@ PrefabInstance:
     - target: {fileID: 8769208016251378803, guid: 90d5fca45bf5d2d4b9784e1585d463a5,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.3464944
+      value: 2.564
       objectReference: {fileID: 0}
     - target: {fileID: 8769208016251378803, guid: 90d5fca45bf5d2d4b9784e1585d463a5,
         type: 3}
@@ -26252,7 +26252,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_text
       value: "Escape or Q: Pause Game\n\nA or \u2190= Move Left\n\nD or \u2192 = Move
-        Right\n\nD or \u2193 = Crouch\n\nW, \u2191 or Space = Jump"
+        Right\n\nD or \u2193 = Crouch\n\nSpace = Jump"
       objectReference: {fileID: 0}
     - target: {fileID: 5888537790072632859, guid: 6e7c2f9695bb56149bb9f41ca732a49d,
         type: 3}
@@ -40803,7 +40803,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1915986214}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.239, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 804923204}
@@ -42607,7 +42607,7 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -47134,7 +47134,7 @@ PrefabInstance:
     - target: {fileID: 1950169602069152879, guid: 3ffc2781a7a17194982b9bba78a28c54,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.157
+      value: -0.145
       objectReference: {fileID: 0}
     - target: {fileID: 804923195, guid: 3ffc2781a7a17194982b9bba78a28c54, type: 3}
       propertyPath: _gemsText

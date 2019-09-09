@@ -2590,6 +2590,12 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 1663574846}
+    - target: {fileID: 5888537790072632859, guid: 6e7c2f9695bb56149bb9f41ca732a49d,
+        type: 3}
+      propertyPath: m_text
+      value: "Escape + Q: Pause Game\n\nA or \u2190= Move Left\n\nD or \u2192 = Move
+        Right\n\nD or \u2193 = Crouch\n\nSpace = Jump"
+      objectReference: {fileID: 0}
     - target: {fileID: 8459903710967090172, guid: 6e7c2f9695bb56149bb9f41ca732a49d,
         type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target

@@ -32,8 +32,9 @@ namespace PeppaSquad.Player
                 _horizontalMove = Input.GetAxisRaw("Horizontal") * _movementSpeed;
                 _running = Input.GetAxisRaw("Horizontal") != 0;
             }
-            //Stops the player from jumping if they're already jumping to stop double/triple jumping from happening
-            _jumping = Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow);
+            //Activates jumping with the keycodes listed
+            _jumping = Input.GetKeyDown(KeyCode.Space);
+            //activates crouching with the keycodes listed  
             _crouching = Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow);
 
             _playerJump.Jump(_jumping);

@@ -6,10 +6,6 @@ namespace PeppaSquad.Player
     {
         //Force added to the player when they jump
         [SerializeField] private float _jumpForce;
-
-        //Decide if player can steer the character while jumping.
-        [SerializeField] private bool _airControl;
-
         //Mask to determine what is ground
         [SerializeField] private LayerMask _whatIsGround;
 
@@ -20,7 +16,7 @@ namespace PeppaSquad.Player
         [SerializeField] private Rigidbody2D _rigidbody2D;
 
         // Radius to determine if the character is currently grounded
-        private const float _groundedRadius = .2f;
+        private const float _groundedRadius = .1f;
 
         //bool for checking if the player is grounded
         private bool _grounded;
@@ -41,9 +37,7 @@ namespace PeppaSquad.Player
                 if (colliders[i].gameObject != gameObject)
                 {
                     _grounded = true;
-
                 }
-
             }
         }
         /// <summary>
@@ -51,16 +45,13 @@ namespace PeppaSquad.Player
         /// </summary>
         public void Jump(bool jump)
         {
-            if (_grounded || _airControl)
+            // If the player should jump...
+            if (_grounded && jump)
             {
-                // If the player should jump...
-                if (_grounded && jump)
-                {
-                    // Add a vertical force to the player.
-                    _grounded = false;
+                // Add a vertical force to the player.
+                _grounded = false;
 
-                    _rigidbody2D.AddForce(new Vector2(0f, _jumpForce));
-                }
+                _rigidbody2D.AddForce(new Vector2(0f, _jumpForce));
             }
         }
     }
