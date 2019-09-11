@@ -8,6 +8,7 @@ namespace PeppaSquad.Player
         [SerializeField] private MovementController _movementController;
         [SerializeField] private PlayerJump _playerJump;
         [SerializeField] private PlayerCrouch _playerCrouch;
+        [SerializeField] private PlayerClimb _playerClimb;
 
         //Floats that influence the way the player moves
         [SerializeField] private float _movementSpeed = 15f;
@@ -27,17 +28,20 @@ namespace PeppaSquad.Player
         private void Update()
         {
             //Checks if the player is not crouching before allowing horizontal movement
-            if (!_crouching)
+            if (!_playerClimb.Climbing)
             {
-                _horizontalMove = Input.GetAxisRaw("Horizontal") * _movementSpeed;
-                _running = Input.GetAxisRaw("Horizontal") != 0;
+                if (!_crouching)
+                {
+                    _horizontalMove = Input.GetAxisRaw("Horizontal") * _movementSpeed;
+                    _running = Input.GetAxisRaw("Horizontal") != 0;
+                    //Activates jumping with the keycodes listed
+                    _jumping = Input.GetKeyDown(KeyCode.Space);
+                    //activates crouching with the keycodes listed  
+                    _playerJump.Jump(_jumping);
+                }
+                _crouching = Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow);
             }
-            //Activates jumping with the keycodes listed
-            _jumping = Input.GetKeyDown(KeyCode.Space);
-            //activates crouching with the keycodes listed  
-            _crouching = Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow);
 
-            _playerJump.Jump(_jumping);
         }
 
         /// <summary>
@@ -47,7 +51,10 @@ namespace PeppaSquad.Player
         {
             float speed = _horizontalMove * Time.fixedDeltaTime;
             _movementController.Move(speed);
-            _playerCrouch.Crouch(_crouching, speed);
+            if (!_playerClimb.Climbing)
+            {
+                _playerCrouch.Crouch(_crouching, speed);
+            }
             _jumping = false;
         }
     }

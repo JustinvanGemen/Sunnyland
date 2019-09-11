@@ -21,6 +21,11 @@ namespace PeppaSquad.Player
         /// </summary>
         void OnCollisionEnter2D(Collision2D collision)
         {
+            //Checks if the collision is the invisible deathzone beneath the map (Player hits it when falling off the map)
+            if (collision.collider.tag == "Kill")
+            {
+                PlayerDied();
+            }
             //Checks if the non-player collider involved is not an enemy
             if (collision.collider.tag != "Enemy")
             {

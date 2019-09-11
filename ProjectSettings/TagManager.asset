@@ -11,6 +11,8 @@ TagManager:
   - Gem
   - Victory
   - TurnAI
+  - Ladder
+  - TopLadder
   layers:
   - Default
   - TransparentFX
