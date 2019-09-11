@@ -6302,7 +6302,7 @@ PrefabInstance:
     - target: {fileID: 8023206553493165583, guid: 7d274962af50a74489028ee720a576d8,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.86
+      value: -3.14
       objectReference: {fileID: 0}
     - target: {fileID: 8023206553493165583, guid: 7d274962af50a74489028ee720a576d8,
         type: 3}
@@ -23231,6 +23231,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 804923192, guid: 3ffc2781a7a17194982b9bba78a28c54, type: 3}
+      propertyPath: _audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 6cd7d07f0eda9f7498787018a1a73685, type: 3}
+    - target: {fileID: 804923192, guid: 3ffc2781a7a17194982b9bba78a28c54, type: 3}
+      propertyPath: _audioSource
+      value: 
+      objectReference: {fileID: 1915986216}
     - target: {fileID: 1950169603248194033, guid: 3ffc2781a7a17194982b9bba78a28c54,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -23301,14 +23309,6 @@ PrefabInstance:
       propertyPath: _deathMenu
       value: 
       objectReference: {fileID: 523469378}
-    - target: {fileID: 804923192, guid: 3ffc2781a7a17194982b9bba78a28c54, type: 3}
-      propertyPath: _audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 6cd7d07f0eda9f7498787018a1a73685, type: 3}
-    - target: {fileID: 804923192, guid: 3ffc2781a7a17194982b9bba78a28c54, type: 3}
-      propertyPath: _audioSource
-      value: 
-      objectReference: {fileID: 1915986216}
     - target: {fileID: 804923195, guid: 3ffc2781a7a17194982b9bba78a28c54, type: 3}
       propertyPath: _gemsText
       value: 
